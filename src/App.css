@@ -91,6 +91,7 @@
 .about{  
   margin-top: 0;
   text-align: center;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -234,4 +235,16 @@
   height: 280px;
   opacity: 0;
   transition: .7s ease-in-out 180s;
+}
+
+.nav{
+  border: 1px solid red;
+  position: fixed;
+  top: 30%;
+  height: 30vh;
+  left: 0;
+}
+
+.test{
+  height: 100vh;
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import './Nav.css';
 import Pdf from './static/Danh_Vuong_resume.pdf';
 import profile from './static/profile1.jpg';
 import reactLogo from './static/react-logo.png';
@@ -21,6 +22,7 @@ import psLogo from './static/photoshop-cc.svg';
 import premiereLogo from './static/premiere-cc.svg';
 import project1 from './static/project1.png';
 import project2 from './static/project2.png';
+import {Link} from 'react-scroll';
 function App() {
   return (
     <div className="App">
@@ -140,7 +142,54 @@ function App() {
             
           </div>
         </div>
+        <div className='test'>
+          Test test
+        </div>
       </main>
+      <div className='Nav'>
+        <Link
+          to='home'
+          activeClass='active'
+          spy={true}
+          smooth={true}
+          duration={600}>
+          <div className='node'>
+            <span>Home</span>
+          </div>
+        </Link>
+
+        <Link
+          to='about'
+          activeClass='active'
+          spy={true}
+          smooth={true}
+          duration={600}>
+          <div className='node'>
+            <span>About</span>
+          </div>
+        </Link>
+
+        <Link
+          to='project'
+          activeClass='active'
+          spy={true}
+          smooth={true}
+          duration={600}>
+          <div className='node'>
+            <span>Projects</span>
+          </div>
+        </Link>
+        <Link
+          to='test'
+          activeClass='active'
+          spy={true}
+          smooth={true}
+          duration={600}>
+          <div className='node'>
+            <span>Test</span>
+          </div>
+        </Link>
+      </div>
     </div>
   );
 }
