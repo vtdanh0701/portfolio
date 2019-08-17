@@ -19,7 +19,8 @@ import jsLogo from './static/javascript-1.svg';
 import vsLogo from './static/visual-studio-code.svg';
 import psLogo from './static/photoshop-cc.svg';
 import premiereLogo from './static/premiere-cc.svg';
-
+import project1 from './static/project1.png';
+import project2 from './static/project2.png';
 function App() {
   return (
     <div className="App">
@@ -88,24 +89,56 @@ function App() {
         </div>
         <div className='project'>
           <h1>My Project</h1>
+          <div className='project-card'>
+            <div className='project-img'>
+              <img src={project1}/>
+            </div>
+            <div className='project-info'>
+              Hello from info
+            </div>
+          </div>
+          <div className='project-card'>
+            <div className='project-img'>
+              <img src={project2}/>
+            </div>
+            <div className='project-info'>
+              Hello from info
+            </div>
+          </div>
         </div>
         <div className='contact'>
           <h1>Contact</h1>
           <form name="contact" method="post">
-          <input type="hidden" name="form-name" value="contact" />
-          <p>
-            <label>Your Name: <input type="text" name="name" placeholder='Name'/></label>
-          </p>
-          <p>
-            <label>Your Email: <input type="email" name="email" placeholder='Email'/></label>
-          </p>
-          <p>
-            <label>Message: <textarea name="message" placeholder='Message'></textarea></label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
+            <input type="hidden" name="form-name" value="contact" />
+            <div className='email-name-container'>
+                <input className='contact-name' type="text" name="name" placeholder='Name'/>
+                <input className='contact-email' type="email" name="email" placeholder='Email'/>
+            </div>
+            <textarea className='contact-message' name="message" placeholder='Message'></textarea>
+            <button className='btn' type="submit">Send Message</button>     
         </form>
+        <div className='find-me'>
+          Find Me Online
+        </div>
+        <div className='social-box'>
+            <a href='https://www.linkedin.com/in/danh-vuong/' target='_blank'>
+              <i class="fab fa-linkedin-in"></i> 
+              <span>LinkedIn</span>
+            </a>
+            <a href='http://github.com/vtdanh0701' target='_blank'>
+              <i class="fab fa-github-alt"></i>
+              <span>Github</span>
+            </a>
+            <a href='mailto:vtdanh0701@gmail.com'>
+              <i class="fas fa-envelope"></i>
+              <span>Email</span>
+            </a>
+            <a href='https://www.youtube.com/c/DanhVuong71' target='_blank'>
+              <i class="fab fa-youtube"></i>
+              <span>Youtube</span>
+            </a>
+            
+          </div>
         </div>
       </main>
     </div>
