@@ -60,7 +60,7 @@ function App() {
             <h1>About Me</h1>
             <p>I'm a Seattle-based full-stack Web Developer who has broad experience with various   development technologies, and I am currently specializing in JavaScript and React. </p>
             <p>I enjoy learning new things and finding creative solutions for out of the ordinary   problems. Passionate and inspired by visual aesthetics, good design, and clean, precise   code. Driven to create interactive products shaped around human experience, expression,   and intuitive, efficient functionality.</p>
-            <p>Being a self-taugh pianist and a conductor for my community church choir taught me   teamwork, communication and discipline. Working with various team refined my empathy,   strategy and problem-solving. Learning programming on my own, I learned patience,   perseverance and persistence. I translate those valuable skills to my work environment,   which allows me to offer unique and creative approaches to any project or challenge.</p>
+            <p>Being a self-taught pianist and a conductor for my community church choir taught me   teamwork, communication and discipline. Working with various team refined my empathy,   strategy and problem-solving. Learning programming on my own, I learned patience,   perseverance and persistence. I translate those valuable skills to my work environment,   which allows me to offer unique and creative approaches to any project or challenge.</p>
             <p>Curious to learn more about me ? Feel free to reach out!</p>
           </div>
           <div className='profile-container'>
@@ -108,9 +108,10 @@ function App() {
             </div>
           </div>
         </div>
-        <div className='contact'>
-          <h1>Contact</h1>
+        <div className='contact-container'>
+          
           <form name="contact" method="post">
+          <h1>Contact</h1> <br/>
             <input type="hidden" name="form-name" value="contact" />
             <div className='email-name-container'>
                 <input className='contact-name' type="text" name="name" placeholder='Name'/>
@@ -141,10 +142,9 @@ function App() {
             </a>
             
           </div>
+        <p> {'\u00A9'} 2019 Danh Vuong</p>
         </div>
-        <div className='test'>
-          Test test
-        </div>
+        
       </main>
       <div className='Nav'>
         <Link
@@ -180,13 +180,13 @@ function App() {
           </div>
         </Link>
         <Link
-          to='test'
+          to='contact-container'
           activeClass='active'
           spy={true}
           smooth={true}
           duration={600}>
           <div className='node'>
-            <span>Test</span>
+            <span>Contact</span>
           </div>
         </Link>
       </div>
