@@ -30,7 +30,7 @@ function App() {
         <div className='home'>
           <div className='title-box'>
             <h1>D A N H</h1>
-            <h2>FULL STACK WEB DEVELOPER</h2>
+            <h2>Full Stack Web Developer</h2>
           </div>
           <div className='social-box'>
             <a href='https://www.linkedin.com/in/danh-vuong/' target='_blank'>

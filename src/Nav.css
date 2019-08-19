@@ -1,53 +1,63 @@
 .Nav {
-    height: 50%;
-    position: fixed;
-    left: 0;
-    top:20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .Nav .node {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #ffffff;
-    width: 5rem;
-    height: 5rem;
-    border: 2px solid #ffffff;
-    border-radius: 50%;
-    margin: 0 0.8rem;
-    background-color: #333;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: scale(0.8);
-    transition: 300ms ease-in-out;
-  }
-  
-  .Nav a:hover > .node {
-    transform: scale(1);
-  }
-  
-  .Nav a.active > .node {
-    transform: scale(1);
-    background-color: #ffffff;
-    color: #333333;
-    border: 2px solid #333333;
-  }
-  
+  width: 100%;
+  height: 12vh;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  @media screen and (max-width: 425px) {
-    .Nav .node {
-      margin: 0;
-    }
-  
-    .Nav a.active > .node,
-    .Nav a:hover > .node,
-    .Nav a:active > .node {
-      transform: scale(0.8);
-    }
+.Nav .node {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  width: 5rem;
+  height: 5rem;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  margin: 0 0.8rem;
+  background-color: #333;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.8);
+  transition: 300ms ease-in-out;
+}
+
+.Nav a:hover > .node {
+  transform: scale(1);
+}
+
+.Nav a.active > .node {
+  transform: scale(1);
+  background-color: #ffffff;
+  color: #333333;
+  border: 2px solid #333333;
+}
+
+.Nav::after {
+  content: '';
+  display: block;
+  width: 28rem;
+  height: 20vh;
+  border: 3px solid #ffffff99;
+  border-radius: 8px;
+  background-color: #ffffff99;
+  position: absolute;
+  top: 6vh;
+  z-index: -1;
+}
+
+@media screen and (max-width: 425px) {
+  .Nav .node {
+    margin: 0;
   }
-  
+
+  .Nav a.active > .node,
+  .Nav a:hover > .node,
+  .Nav a:active > .node {
+    transform: scale(0.8);
+  }
+}

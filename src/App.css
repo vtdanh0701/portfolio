@@ -13,16 +13,17 @@
 }
 
 .home{
-  background: url('./static/background.jpg');
+  background-color: #39393A;
+  background: url('./static/background2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
   top: 0;
   left: 0;
   width: 100%;
   padding: 0;
-  background-size: cover;
-  background-position-y: 60%;
-  background-repeat: no-repeat;
   height: 100vh;
-  color: white;
+  color: #79E8B5;
+  font-family: 'Nunito', sans-serif;
   align-content: center;
   text-align: center;
   display: flex;
@@ -32,9 +33,9 @@
 }
 .title-box{
   display: inline-block;
+  
   text-align: center;
   align-content: center;
-  margin-top: 10%;
   width: 50%;
  
 }
@@ -46,12 +47,12 @@
 .title-box h1{
   font-size: 3.6rem;
   padding: .3em 1.4em;
-  border: 7px solid white;
 }
 .title-box h2{
   font-size: 1.7rem;
   padding: 1rem 0;
-  border-bottom: 2px solid white;
+  color: #6DD1A3;
+  border-bottom: 2px solid #FF8552;
 }
 .social-box{
   display: flex;
@@ -61,7 +62,7 @@
 }
 .social-box a{
   text-decoration: none;
-  color: white;
+  color: #e6e6e6;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -78,7 +79,8 @@
 }
 .social-box a:hover>span{
   transform: scale(1.3);
-  color: white
+  color: #61BA91;
+  
 }
 .social-box i{
   font-size: 2rem;
@@ -87,12 +89,14 @@
 }
 .social-box a:hover>i{
   transform: scale(1.3);
+  
 }
 .about{  
   margin-top: 0;
   text-align: center;
   height: 100vh;
   display: flex;
+  background-color: #e6e6e6;
   flex-direction: column;
   justify-content: center;
   align-items: center;
