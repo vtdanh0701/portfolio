@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import './Nav.css';
+import './Animate.css'
+import AOS from 'aos';
 import Pdf from './static/Danh_Vuong_resume.pdf';
 import profile from './static/profile1.jpg';
 import reactLogo from './static/react-logo.png';
@@ -23,40 +25,43 @@ import premiereLogo from './static/premiere-cc.svg';
 import project1 from './static/project1.png';
 import project2 from './static/project2.png';
 import {Link} from 'react-scroll';
+AOS.init();
 function App() {
   return (
     <div className="App">
       <main className='main'>
         <div className='home'>
-          <div className='title-box'>
-            <h1>D A N H</h1>
-            <h2>Full Stack Web Developer</h2>
-          </div>
-          <div className='social-box'>
-            <a href='https://www.linkedin.com/in/danh-vuong/' target='_blank'>
-              <i class="fab fa-linkedin-in"></i> 
-              <span>LinkedIn</span>
-            </a>
-            <a href='http://github.com/vtdanh0701' target='_blank'>
-              <i class="fab fa-github-alt"></i>
-              <span>Github</span>
-            </a>
-            <a href='mailto:vtdanh0701@gmail.com'>
-              <i class="fas fa-envelope"></i>
-              <span>Email</span>
-            </a>
-            <a href='https://www.youtube.com/c/DanhVuong71' target='_blank'>
-              <i class="fab fa-youtube"></i>
-              <span>Youtube</span>
-            </a>
-            <a href={Pdf} target='_blank'>
-              <i class="fas fa-file-alt"></i>
-              <span>Resume</span>
-            </a>
+          <div className='home-container animated fadeInUp slow'>
+            <div className='title-box'>
+              <h1>D A N H</h1>
+              <h2>Full Stack Web Developer</h2>
+            </div>
+            <div className='social-box'>
+              <a href='https://www.linkedin.com/in/danh-vuong/' target='_blank'>
+                <i class="fab fa-linkedin-in"></i> 
+                <span>LinkedIn</span>
+              </a>
+              <a href='http://github.com/vtdanh0701' target='_blank'>
+                <i class="fab fa-github-alt"></i>
+                <span>Github</span>
+              </a>
+              <a href='mailto:vtdanh0701@gmail.com'>
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
+              </a>
+              <a href='https://www.youtube.com/c/DanhVuong71' target='_blank'>
+                <i class="fab fa-youtube"></i>
+                <span>Youtube</span>
+              </a>
+              <a href={Pdf} target='_blank'>
+                <i class="fas fa-file-alt"></i>
+                <span>Resume</span>
+              </a>
+            </div>
           </div>
         </div>
         <div className='about'>
-          <div className='info'>
+          <div className='info'  data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-once="true">
             <h1>About Me</h1>
             <p>I'm a Seattle-based full-stack Web Developer who has broad experience with various   development technologies, and I am currently specializing in JavaScript and React. </p>
             <p>I enjoy learning new things and finding creative solutions for out of the ordinary   problems. Passionate and inspired by visual aesthetics, good design, and clean, precise   code. Driven to create interactive products shaped around human experience, expression,   and intuitive, efficient functionality.</p>
@@ -146,7 +151,7 @@ function App() {
         </div>
         
       </main>
-      <div className='Nav'>
+      <div className='Nav animated bounceInLeft slow'>
         <Link
           to='home'
           activeClass='active'
