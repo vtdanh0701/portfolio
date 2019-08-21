@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  
 }
 .App {
   text-align: center;
@@ -22,13 +23,15 @@
   width: 100%;
   padding: 0;
   height: 100vh;
+  color: #79E8B5;
 }
 .home-container{
   top: 20%;
   left: 0;
+}
+.home-container, .about-container{
   padding: 0;
   position: relative;
-  color: #79E8B5;
   font-family: 'Nunito', sans-serif;
   align-content: center;
   text-align: center;
@@ -39,7 +42,6 @@
 }
 .title-box{
   display: inline-block;
-  
   text-align: center;
   align-content: center;
   width: 50%;
@@ -99,41 +101,86 @@
 }
 .about{  
   margin-top: 0;
-  text-align: center;
   height: 100vh;
+  background-color: #F9F9F9;
+}
+.about-container{
+  width: 100%;
   display: flex;
-  background-color: #e6e6e6;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
+}
+.about-container h1{
+  top: 5%;
+  font-size: 2.5rem;
+  position: absolute;
+  color: #ff543b;
+  font-weight: 400;
 }
 .info{
-  width: 50%;
+  width: 60%;
+  border-left: 1px solid #FF8552;
+  border-radius: 30px;
+  padding: 1em;
   margin-bottom: 10px;
+  margin-top: 10px;
+  right: 5%;
+  top: 15%;
+  position: absolute;
 }
 .profile-container{
+  position: absolute;
+  left: 5%;
   width: 20%;
-  overflow: hidden;
+  padding-top: 20px;
+  border-radius: 1000px;
 }
 .profile-container img{
-  display: block;
   width: 100%;
   margin-bottom: 10px;
+  border-radius: 1000px;
+  border: 3px solid white;
+  box-shadow: 3px 3px 5px 6px #ccc
 }
+
 .skills{
-  background-color: gray;
-  width: 50%;
-  height: 40%;
+  border-left: 1px solid #FF8552;
+  border-radius: 30px;
+  padding: 1em;
+  width: 60%;
+  right: 5%;
+  bottom: 8%;
   display: flex;
-  position: relative;
-  justify-content: center;
+  position: absolute;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
+  flex-direction: row;
 
 }
-.skills img{
-  width: 6%;
-  margin: 10px;
+.skills-node{
+  display: flex;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 10px;
+  flex-direction: column;
+}
+.skills-node img{
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 15px 5px;
+}
+.skills-node p{
+  font-size: 15px; 
+}
+.skills-node:hover>p{
+  font-weight: 600;
+}
+.logo-container{
+  border: 1px solid green;
+  height: 80%;
 }
 
 .project{
