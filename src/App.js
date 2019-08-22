@@ -45,12 +45,12 @@ function App() {
     <div className="App">
       <main className='main'>
         <div className='home'>
-          <div className='home-container animated fadeInUp slow'>
+          <div className='home-container'>
             <div className='title-box'>
-              <h1>D A N H</h1>
-              <h2>Full Stack Web Developer</h2>
+              <h1 className='animated fadeInLeft'>D A N H</h1>
+              <h2 className='animated bounceInDown slow'>Full Stack Web Developer</h2>
             </div>
-            <div className='social-box'>
+            <div className='social-box animated fadeIn slow delay-1s'>
               <a href='https://www.linkedin.com/in/danh-vuong/' target='_blank'>
                 <i class="fab fa-linkedin-in"></i> 
                 <span>LinkedIn</span>
@@ -75,14 +75,15 @@ function App() {
           </div>
         </div>
         <div className='about'>
-          <div className='about-container' data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-center">
-          <h1>About Me</h1>
+          <div className='about-container' data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-center" data-aos-once='true'>
+          <h1>Who I am</h1>
             <div className='info'>
               
-              <p>I'm a Seattle-based full-stack Web Developer who has broad experience with various   development technologies, and I am currently specializing in JavaScript and React. </p>
-              <p>I enjoy learning new things and finding creative solutions for out of the ordinary   problems. Passionate and inspired by visual aesthetics, good design, and clean, precise   code. Driven to create interactive products shaped around human experience, expression,   and intuitive, efficient functionality.</p>
-              <p>Being a self-taught pianist and a conductor for my community church choir taught me   teamwork, communication and discipline. Working with various team refined my empathy,   strategy and problem-solving. Learning programming on my own, I learned patience,   perseverance and persistence. I translate those valuable skills to my work environment,   which allows me to offer unique and creative approaches to any project or challenge.</p>
-              <p>Curious to learn more about me ? Feel free to reach out!</p>
+              <h3>Hi there! My name is Danh Vuong and I am a full-stack web developer living in Seattle, WA. I have a broad experience with various development technologies, and I am currently specializing in JavaScript and React.</h3>
+              
+              <p>Coding and solving complex algorithm problems has been my passion since the day I started my Software Engineering Immersive program at General Assembly, Seattle. I love building web experiences that are effortless for users, and enjoy solving design problems through code.</p>
+              <p>Aside from coding, I am also a pianist and a conductor for my church choir. Having chance to work with various teams and people refined my empathy, strategy and problems solving. I translate those valuable skills to my work environment, which allows me to offer unique and creative approaches to any project or challenge. </p>
+              <p>Curious to learn more about me ? <Link to='contact' smooth={true}><a>Feel free to reach out!</a></Link></p>
             </div>
             <div className='profile-container'>
               <img src={profile}/>
@@ -94,16 +95,21 @@ function App() {
           </div>
         </div>
         <div className='project'>
-          <h1>My Project</h1>
-          <div className='project-card'>
-            <div className='project-img'>
+          <h1 data-aos='fade-up' data-aos-duration='800' data-aos-easing='ease-in-out' data-aos-once='true'>My Project</h1>
+          <div className='project-card' data-aos='fade-right' data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-center" data-aos-once='true' >
+            <div className='project-img' >
               <img src={project1}/>
             </div>
             <div className='project-info'>
-              Hello from info
+              <h3>Space Invader</h3>
+              <p className='tech'>JavaScript <span>|</span> HTML5 <span>|</span> Canvas <span>|</span> CSS3</p>
+              <p className='description'>Eliminate all the enemy units, upgrade your weapon and be ready for the boss !</p>
+              <a href='https://vtdanh0701.github.io/space_invader/' target='blank'> Live Demo</a>
+              <a href='https://github.com/vtdanh0701/space_invader' target='blank'>GitHub</a>
+              <p></p>
             </div>
           </div>
-          <div className='project-card'>
+          <div className='project-card' data-aos='fade-left' data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-once='true' >
             <div className='project-img'>
               <img src={project2}/>
             </div>
@@ -124,10 +130,7 @@ function App() {
             <textarea className='contact-message' name="message" placeholder='Message'></textarea>
             <button className='btn' type="submit">Send Message</button>     
         </form>
-        <div className='find-me'>
-          Find Me Online
-        </div>
-        <div className='social-box'>
+        <div className='social-box-footer'>
             <a href='https://www.linkedin.com/in/danh-vuong/' target='_blank'>
               <i class="fab fa-linkedin-in"></i> 
               <span>LinkedIn</span>
