@@ -114,7 +114,12 @@ function App() {
               <img src={project2}/>
             </div>
             <div className='project-info'>
-              Hello from info
+            <h3>iCePi</h3>
+              <p className='tech'>React <span>|</span> MongoDB <span>|</span> JavaScript <span>|</span></p>
+              <p className='description'>description</p>
+              <a href="https://icepi.herokuapp.com/" target='blank'> Live Demo</a>
+              <a href='https://github.com/vtdanh0701/Project3-iCepi' target='blank'>GitHub</a>
+              <p></p>
             </div>
           </div>
         </div>
@@ -149,7 +154,7 @@ function App() {
             </a>
             
           </div>
-        <p> {'\u00A9'} 2019 Danh Vuong</p>
+        <p className='trademark'> {'\u00A9'} 2019 Danh Vuong</p>
         </div>
         
       </main>

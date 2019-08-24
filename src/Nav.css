@@ -41,13 +41,14 @@
   content: '';
   display: block;
   width: 28rem;
-  height: 20vh;
+  height: 25px;
   border: 3px solid #ffffff99;
-  border-radius: 8px;
   background-color: #ffffff99;
   position: absolute;
-  top: 6vh;
+  bottom: 0;
   z-index: -1;
+  transform: skew(-55deg);
+  box-shadow: 5px 8px 5px 6px #fefefe;
 }
 
 @media screen and (max-width: 425px) {
