@@ -75,40 +75,33 @@ function App() {
           </div>
         </div>
         <div className='about'>
+        <h1>Who I am</h1>
           <div className='about-container' data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-center" data-aos-once='true'>
-          <h1>Who I am</h1>
-            <div className='info'>
-              
-              <h3>Hi there! My name is Danh Vuong and I am a full-stack web developer living in Seattle, WA. I have a broad experience with various development technologies, and I am currently specializing in JavaScript and React.</h3>
-              
-              <p>Coding and solving complex algorithm problems has been my passion since the day I started my Software Engineering Immersive program at General Assembly, Seattle. I love building web experiences that are effortless for users, and enjoy solving design problems through code.</p>
-              <p>Aside from coding, I am also a pianist and a conductor for my church choir. Having chance to work with various teams and people refined my empathy, strategy and problems solving. I translate those valuable skills to my work environment, which allows me to offer unique and creative approaches to any project or challenge. </p>
-              <p>Curious to learn more about me ? <Link to='contact' smooth={true}><a>Feel free to reach out!</a></Link></p>
-            </div>
             <div className='profile-container'>
               <img src={profile}/>
             </div>
-          
-            <div className='skills'>
+            <div className='info-container'>
+              <div className='info'>
+                
+                <h3>Hi there! My name is Danh Vuong and I am a full-stack web developer living in Seattle, WA. I have a broad experience with various development technologies, and I am currently specializing in JavaScript and React.</h3>
+                
+                <p>Coding and solving complex algorithm problems has been my passion since the day I started my Software Engineering Immersive program at General Assembly, Seattle. I love building web experiences that are effortless for users, and enjoy solving design problems through code.</p>
+                <p>Aside from coding, I am also a pianist and a conductor for my church choir. Having chance to work with various teams and people refined my empathy, strategy and problems solving. I translate those valuable skills to my work environment, which allows me to offer unique and creative approaches to any project or challenge. </p>
+                <p>Curious to learn more about me ? <Link to='contact' smooth={true}><a>Feel free to reach out!</a></Link></p>
+              </div>
+              <div className='skills'>
               {skills}
             </div>
+            </div>
+            
+            
+          
+            
           </div>
         </div>
         <div className='project'>
           <h1 data-aos='fade-up' data-aos-duration='800' data-aos-easing='ease-in-out' data-aos-once='true'>My Project</h1>
-          <div className='project-card' data-aos='fade-right' data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-center" data-aos-once='true' >
-            <div className='project-img' >
-              <img src={project1}/>
-            </div>
-            <div className='project-info'>
-              <h3>Space Invader</h3>
-              <p className='tech'>JavaScript <span>|</span> HTML5 <span>|</span> Canvas <span>|</span> CSS3</p>
-              <p className='description'>Eliminate all the enemy units, upgrade your weapon and be ready for the boss !</p>
-              <a href='https://vtdanh0701.github.io/space_invader/' target='blank'> Live Demo</a>
-              <a href='https://github.com/vtdanh0701/space_invader' target='blank'>GitHub</a>
-              <p></p>
-            </div>
-          </div>
+          
           <div className='project-card' data-aos='fade-left' data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-once='true' >
             <div className='project-img'>
               <img src={project2}/>
@@ -119,6 +112,19 @@ function App() {
               <p className='description'>iCePi provides users hundreds of recipes based on their recipe name or ingredients. You can create an account and save your favorite recipes for later. Step-by-step guides, with pictures, price per serving , time to complete...etc..We want to make sure you know exactly what you're doing and have a good meal ready.</p>
               <a href="https://icepi.herokuapp.com/" target='blank'> Live Demo</a>
               <a href='https://github.com/vtdanh0701/Project3-iCepi' target='blank'>GitHub</a>
+              <p></p>
+            </div>
+          </div>
+          <div className='project-card' data-aos='fade-right' data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-center" data-aos-once='true' >
+            <div className='project-img' >
+              <img src={project1}/>
+            </div>
+            <div className='project-info'>
+              <h3>Space Invader</h3>
+              <p className='tech'>JavaScript <span>|</span> HTML5 <span>|</span> Canvas <span>|</span> CSS3</p>
+              <p className='description'>Eliminate all the enemy units, upgrade your weapon and be ready for the boss !</p>
+              <a href='https://vtdanh0701.github.io/space_invader/' target='blank'> Live Demo</a>
+              <a href='https://github.com/vtdanh0701/space_invader' target='blank'>GitHub</a>
               <p></p>
             </div>
           </div>
