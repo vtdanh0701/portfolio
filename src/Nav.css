@@ -1,6 +1,5 @@
 .Nav {
   width: 100%;
-  background: red;
   height: 12vh;
   position: fixed;
   bottom: 0;
@@ -55,6 +54,13 @@
 @media screen and (max-width: 425px) {
   .Nav .node {
     margin: 0;
+  }
+  .Nav::after{
+    width: 80%;
+    transform: skew(0deg)
+  }
+  .Nav{
+    width: 100%;
   }
 
   .Nav a.active > .node,
