@@ -115,7 +115,7 @@ function App() {
             </div>
             <div className='project-info'>
             <h3>iCePi</h3>
-              <p className='tech'>React <span>|</span> MongoDB <span>|</span> JavaScript <span>|</span></p>
+              <p className='tech'>React <span>|</span> MongoDB <span>|</span> JavaScript <span>|</span> CSS3</p>
               <p className='description'>iCePi provides users hundreds of recipes based on their recipe name or ingredients. You can create an account and save your favorite recipes for later. Step-by-step guides, with pictures, price per serving , time to complete...etc..We want to make sure you know exactly what you're doing and have a good meal ready.</p>
               <a href="https://icepi.herokuapp.com/" target='blank'> Live Demo</a>
               <a href='https://github.com/vtdanh0701/Project3-iCepi' target='blank'>GitHub</a>
