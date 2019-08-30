@@ -8,6 +8,7 @@ import Pdf from './static/Danh_Vuong_resume.pdf';
 import profile from './static/profile1.jpg';
 import project1 from './static/project1.png';
 import project2 from './static/project2.png';
+import project3 from './static/project3.png'
 import {Link} from 'react-scroll';
 AOS.init();
 function App() {
@@ -115,7 +116,22 @@ function App() {
               <p></p>
             </div>
           </div>
+          
           <div className='project-card' data-aos='fade-right' data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-center" data-aos-once='true' >
+            <div className='project-img' >
+              <img src={project3}/>
+            </div>
+            <div className='project-info'>
+              <h3>Scalakor</h3>
+              <p className='tech'>JavaScript <span>|</span> HTML5 <span>|</span> Canvas <span>|</span> CSS3</p>
+              <p className='description'>Eliminate all the enemy units, upgrade your weapon and be ready for the boss !</p>
+              <a href='https://vtdanh0701.github.io/space_invader/' target='blank'> Live Demo</a>
+              <a href='https://github.com/vtdanh0701/space_invader' target='blank'>GitHub</a>
+              <p></p>
+            </div>
+          </div>
+
+          <div className='project-card' data-aos='fade-left' data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-center" data-aos-once='true' >
             <div className='project-img' >
               <img src={project1}/>
             </div>
@@ -129,6 +145,7 @@ function App() {
             </div>
           </div>
         </div>
+        
         <div className='contact-container'>
           
           <form name="contact" method="post">
