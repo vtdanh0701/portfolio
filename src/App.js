@@ -103,13 +103,13 @@ function App() {
         <div className='project'>
           <h1 data-aos='fade-up' data-aos-duration='800' data-aos-easing='ease-in-out' data-aos-once='true'>My Project</h1>
           
-          <div className='project-card' data-aos='fade-left' data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-once='true' >
+          <div className='project-card' data-aos='fade-up' data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-once='true' >
             <div className='project-img'>
               <img src={project2}/>
             </div>
             <div className='project-info'>
             <h3>iCePi</h3>
-              <p className='tech'>React <span>|</span> MongoDB <span>|</span> JavaScript <span>|</span> CSS3</p>
+              <p className='tech'>React <span>|</span> MongoDB <span>|</span> Axios <span>|</span> JavaScript <span>|</span> CSS3</p>
               <p className='description'>iCePi provides users hundreds of recipes based on their recipe name or ingredients. You can create an account and save your favorite recipes for later. Step-by-step guides, with pictures, price per serving , time to complete...etc..We want to make sure you know exactly what you're doing and have a good meal ready.</p>
               <a href="https://icepi.herokuapp.com/" target='blank'> Live Demo</a>
               <a href='https://github.com/vtdanh0701/Project3-iCepi' target='blank'>GitHub</a>
@@ -117,21 +117,21 @@ function App() {
             </div>
           </div>
           
-          <div className='project-card' data-aos='fade-right' data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-center" data-aos-once='true' >
+          <div className='project-card' data-aos='fade-up' data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-center" data-aos-once='true' >
             <div className='project-img' >
               <img src={project3}/>
             </div>
             <div className='project-info'>
               <h3>Scalakor</h3>
-              <p className='tech'>JavaScript <span>|</span> HTML5 <span>|</span> Canvas <span>|</span> CSS3</p>
-              <p className='description'>Eliminate all the enemy units, upgrade your weapon and be ready for the boss !</p>
-              <a href='https://vtdanh0701.github.io/space_invader/' target='blank'> Live Demo</a>
-              <a href='https://github.com/vtdanh0701/space_invader' target='blank'>GitHub</a>
+              <p className='tech'>Express <span>|</span> Sequelize <span>|</span> EJS <span>|</span> Postgres <span>|</span> VexFlow</p>
+              <p className='description'>Scalakor is a music theory app that helps users to choose the right scale to improvise over a chord. Pick a chord and we will provide you with all the information about that chord. Create an account, view chords information and save your favorite chord to your list.</p>
+              <a href='https://scalakor.herokuapp.com/' target='blank'> Live Demo</a>
+              <a href='https://github.com/vtdanh0701/GA-Project2-Scalakor' target='blank'>GitHub</a>
               <p></p>
             </div>
           </div>
 
-          <div className='project-card' data-aos='fade-left' data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-center" data-aos-once='true' >
+          <div className='project-card' data-aos='fade-up' data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-center" data-aos-once='true' >
             <div className='project-img' >
               <img src={project1}/>
             </div>
@@ -144,6 +144,7 @@ function App() {
               <p></p>
             </div>
           </div>
+          <p className='demo-note'>For Demo : Please login with Email: demo@demo.com | Password: password</p>
         </div>
         
         <div className='contact-container'>
