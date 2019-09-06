@@ -4,7 +4,7 @@ import './Nav.css';
 import './Animate.css'
 import logos from './static/logos';
 import AOS from 'aos';
-import Pdf from './static/Danh_Vuong_resume.pdf';
+import Pdf from './static/Resume_Updated.pdf';
 import profile from './static/profile1.jpg';
 import project1 from './static/project1.png';
 import project2 from './static/project2.png';
