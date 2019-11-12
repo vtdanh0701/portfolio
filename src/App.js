@@ -178,6 +178,8 @@ Used AdminLTE template integrated with ReactJs, customized some styling with SCS
             <textarea className='contact-message' name="message" placeholder='Message'></textarea>
             <button className='btn' type="submit">Send Message</button>     
         </form>
+
+        
         <div className='social-box-footer'>
             <a href='https://www.linkedin.com/in/danh-vuong/' target='_blank'>
               <i class="fab fa-linkedin-in"></i> 
