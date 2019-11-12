@@ -9,6 +9,7 @@ import profile from './static/profile1.jpg';
 import project1 from './static/project1.png';
 import project2 from './static/project2.png';
 import project3 from './static/project3.png'
+import zerobug from './static/zerobug.png';
 import {Link} from 'react-scroll';
 AOS.init();
 function App() {
@@ -102,6 +103,24 @@ function App() {
         </div>
         <div className='project'>
           <h1 data-aos='fade-up' data-aos-duration='800' data-aos-easing='ease-in-out' data-aos-once='true'>My Project</h1>
+          
+          <div className='project-card' data-aos='fade-up' data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-once='true' >
+            <div className='project-img'>
+              <img src={zerobug}/>
+            </div>
+            <div className='project-info'>
+            <h3>Zero Bug</h3>
+              <p className='tech'>React <span>|</span> MongoDB <span>|</span> Express <span>|</span> Node.js <span>|</span> GraphQL <span>|</span> Bootstrap <span>|</span> AdminLTE </p> 
+              <p className='description'>
+Bug Tracking System must be in place for every infrastructure we design. Software is no exception to this. This application is designed to track the status of bugs that are reported during Software testing.
+Designed and developed a full-stack app with ExpressJs, GraphQL and MongoDB. 
+Used AdminLTE template integrated with ReactJs, customized some styling with SCSS, CSS, and Bootstrap. 
+</p>
+              <a href="https://zerobug.herokuapp.com/" target='blank'> Live Demo</a>
+              <a href='https://github.com/vtdanh0701/Zero-Bug' target='blank'>GitHub</a>
+              <p></p>
+            </div>
+          </div>
           
           <div className='project-card' data-aos='fade-up' data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-once='true' >
             <div className='project-img'>
