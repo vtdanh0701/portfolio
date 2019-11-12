@@ -4,7 +4,7 @@ import './Nav.css';
 import './Animate.css'
 import logos from './static/logos';
 import AOS from 'aos';
-import Pdf from './static/Resume_Updated.pdf';
+import Pdf from './static/Danh-Vuong-Resume.pdf';
 import profile from './static/profile1.jpg';
 import project1 from './static/project1.png';
 import project2 from './static/project2.png';
@@ -201,6 +201,7 @@ Used AdminLTE template integrated with ReactJs, customized some styling with SCS
         </div>
         
       </main>
+
       <div className='Nav animated bounceInLeft slow'>
         <Link
           to='home'
